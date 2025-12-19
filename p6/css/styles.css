@@ -20,11 +20,11 @@ body {
     /* 3- centrar */
 }
 
-.container {
+main {
     text-align: center;
 }
 
-.youtuber, .footer, .header {
+.youtuber, footer, header {
     /* 4- color de fondo */
     background-color: #333333;
     border: 1px solid lightgray;
@@ -37,7 +37,7 @@ body {
     padding: 20px;
     text-align: center;    
 }
-.footer {
+footer {
     padding: 0px;
     color: white;
 }
@@ -124,7 +124,7 @@ li {
 }
 
 @media all and (max-width: 700px) {
-    .youtuber, .footer {
+    .youtuber, footer {
         /* 17- cambia el color al BORDE*/
         border: solid 2px red;
 
