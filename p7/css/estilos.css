@@ -47,7 +47,7 @@ p {
   */
   /* necesitas 3 instrucciones*/
   /*1: */
-  width: 90%;
+  width: 100%;
   /*2: */
   position: fixed;
   /*3: */
@@ -76,7 +76,7 @@ p {
   */
   /* necesitas 2 instrucciones*/
   /*1: */
-background-color: #FF9900;
+  background-color: #FF9900;
   /*2: */
   text-decoration: uderline;
 }
@@ -87,7 +87,7 @@ background-color: #FF9900;
   */
   /* necesitas 3 instrucciones*/
   /*1: */
-  width: 90%;
+  width: 100%;
   /*2: */
   position: fixed;
   /*3: */
