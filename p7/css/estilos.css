@@ -175,9 +175,9 @@ p {
   /*1: */  
   top: 150px;
   /*2: */ 
-  left: 25%;   
+  left: 30%;   
   /*3: */ 
-  right: 25% ;  
+  right: 30% ;  
   /*4: */  
   position: absolute;  
   border:2px solid red;
