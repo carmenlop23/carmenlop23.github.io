@@ -1,0 +1,273 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CUERPO */
+body{
+  background: url('fondo.png');
+  background-color:  #08adfa;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* TEXTOS */
+h1, h2{
+  text-align: center;
+}
+
+p{
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* CABECERA */
+#header{
+  margin-top: 35px;
+  background: url('logocarberto.png');
+  height: 90px;
+  background-color: #e0d868;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 10;
+  border-bottom: 3px solid #08adfa;
+  
+}
+
+#header h1{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  height: 50px;
+}
+
+#header p{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  height: 37px;
+}
+
+
+/* MENU */
+#menu{
+  width: 100%;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  background-color:  rgba(0,0,0,0.5);
+  border-bottom: 3px solid #08adfa;
+  border-radius: 10px;
+}
+
+#menu ul{
+  list-style: none;
+  text-align: center;
+}
+
+#menu li{
+  display: inline;
+  padding: 10px;
+}
+
+#menu a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Pacifico';
+}
+
+#menu a:hover{
+  background-color: #e100ff;
+  text-decoration: underline;
+}
+
+/* CONTENIDO */
+#content1{
+  margin-top: 10px;
+  width: 100%;
+}
+
+#content2{
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#contentright{
+  overflow: hidden;
+}
+
+/* PRINCIPAL */
+#mainderecha{
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  float: left;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: dashed 2px #08adfa;
+  
+}
+
+#mainizquierda{
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  float: left;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: dashed 2px #08adfa;
+}
+
+
+/* SECCIONES */
+#texto1, #texto2{
+  margin-bottom: 30px;
+  clear: both;
+}
+
+/* IMAGENES */
+.imageRight{
+  float: right;
+  margin: 10px;
+  border-radius: 5px;
+  border: dashed 3px #08adfa;
+}
+
+.imageLeft{
+  float: left;
+  margin: 10px;
+  border: dashed 3px #08adfa;
+  border-radius: 5px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* REDES SOCIALES */
+#redessociales{
+    position: fixed;
+    top: 145px;  
+    right: 20px;
+    width: 120px;
+    height: 550px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border-left: 2px dashed #08adfa;
+    padding: 15px 10px;
+    
+}
+
+#redessociales ul{
+  list-style: none;
+  padding: 0;
+}
+
+#redessociales li{
+  margin-bottom: 15px 0;
+}
+
+#redessociales img{
+  width: 40px;
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 10px;
+ 
+}
+
+/* COOKIES */
+#textCookie {
+  text-align: center;
+}
+
+#cookieEU{
+  position: absolute;
+  top: 150px;
+  left: 30%;
+  right: 30%;
+  border: 3px solid rgb(221, 117, 224);
+  background-color: white;
+  margin-bottom: 5;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 20px black;
+}
+
+.button{
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.button:hover{
+  background-color: #25b8dd;
+}
+
+/* PIE DE PÁGINA */
+#footer{
+  width: 100%;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  background-color: #dfd439;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  padding: 10px;
+  border-top: 5px solid #25b8dd;
+  clear: both;
+}
+
+#footer a{
+  color: #ec07e1;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 700px){
+  #main, #rightNav{
+    width: 100%;
+    float: none;
+  }
+  #redessociales {
+    position: static;      
+    bottom: 50px;         
+    left: 0;              
+    width: 100%;          
+    height: auto;         
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    border-left: none;
+    border-radius: 10px;
+    text-align: center;   
+  }
+  
+  .imageLeft, .imageRight{
+    float: none;
+    text-align: center;
+    
+  }
+
+
+@media all and (max-width: 400px){
+  #header{
+    margin-top: 90px;
+  }
+
+  #menu li{
+    display: block;
+  }
+}
+}
