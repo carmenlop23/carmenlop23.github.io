@@ -57,7 +57,7 @@ p{
   width: 100%;
   height: 35px;
   position: fixed;
-  top: 0;
+  top: 0px;
   background-color:  rgba(0,0,0,0.5);
   border-bottom: 3px solid #08adfa;
   border-radius: 10px;
@@ -180,7 +180,7 @@ img{
 
 #redessociales img{
   width: 40px;
-  display: block;
+  /* display: block; */
   margin-bottom: 40px;
   margin-top: 10px;
  
@@ -259,15 +259,20 @@ img{
     text-align: center;
     
   }
-
+  #header{
+    margin-top: 90px;
+  }
+  #redessociales li {
+    display: inline;
+  }
+}
 
 @media all and (max-width: 400px){
   #header{
     margin-top: 90px;
   }
 
-  #menu li{
-    display: block;
+  #redessociales li  {
+    display: inline;
   }
-}
-}
+} 
