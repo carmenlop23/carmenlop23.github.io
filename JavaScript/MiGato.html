@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando Gatos</title>  
+</head>
+
+<body>
+    <h1>Gato</h1>
+    <input type="button" id="boton" value="Imagen Gato">
+    <div id="Resultado">¿Qué hora es?</div>
+    <img src="" id="imagen" widht='600'>
+
+    <script>
+        let url="https://api.thecatapi.com/v1/images/search"
+        let boton = document.getElementById("boton")
+        let resultado = document.getElementById("Resultado")
+        let imagen = document.getElementById("Resultado")
+
+
+    /* VA A PEDIR LA HORA*/
+    function leerHora(){
+        let hora="ahhh"
+        fetch (url)
+        .then (response => {  
+            console.log(response)
+            return response.json()
+        })
+
+        .then (data => {
+            console.log(data[0].url)
+            imagen.src=data[0].url
+            /* imagen.height --> pedir Pascual */
+            resultado.innerHTML="<a href="+ hora+">" + hora +"</a"
+        })
+        .catch()
+
+    }
+
+        boton.addEventListener("click", (e) => {
+           leerHora()
+           console.log("Me han pulsado")
+           /* resultado.innerHTML="Me han pulsado"+e.target.value*/
+        
+        })
+</script>
+</body>
+</html>
