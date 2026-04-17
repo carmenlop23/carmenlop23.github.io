@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probando Gatos</title>  
+    <title>Conversor Monedas</title>  
 </head>
 
 <body>
-    <h1>Gato</h1>
-    <input type="button" id="boton" value="Imagen Gato">
+    <h1>Conversos de Divisas</h1>
+    <input type="number" id="cantidad" placeholder="Cantidad a convertir">
+    <input type="button" id="boton" value="Convertir">
     <div id="Resultado">¿Qué hora es?</div>
-    <img src="" id="imagen" widht='600'>
 
     <script>
-        let url="https://api.thecatapi.com/v1/images/search"
+        let url="https://api.frankfurter.dev/v2/rates"
         let boton = document.getElementById("boton")
         let resultado = document.getElementById("Resultado")
-        let imagen = document.getElementById("Resultado")
 
 
     /* VA A PEDIR LA HORA*/
@@ -30,10 +29,10 @@
         })
 
         .then (data => {
-            console.log(data[0].url)
-            imagen.src=data[0].url
-            /* imagen.height --> pedir Pascual */
-            resultado.innerHTML="<a href="+ hora +">" + hora +"</a"
+            console.log(data.time)
+            hora=data.time
+            resultado.innerHTML=hora
+
         })
         .catch()
 
