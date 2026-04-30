@@ -78,3 +78,7 @@ i++
 
 
 /* . reverse --> caja negra que le das una cadena y te da la vuelta */
+
+
+
+// El script siempre al final para asegurarnos de que esta todo bien creado 

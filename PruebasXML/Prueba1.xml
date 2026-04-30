@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<alumnos>  
+    <alumno nombre="Pepe" >
+       Este alumno se duerme en clase edad <! [CDATA[ <18]]>  
+    <nombre> pepe </nombre>
+    <dni> 12345678 </dni>
+    <soltero> </soltero>
+    <soltero/>
+    </almuno>
+
+</alumno>

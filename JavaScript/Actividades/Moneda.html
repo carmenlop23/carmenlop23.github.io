@@ -11,7 +11,7 @@
     <h1>Conversos de Divisas</h1>
     <input type="number" id="cantidad" placeholder="Cantidad a convertir">
     <input type="button" id="boton" value="Convertir">
-    <div id="Resultado">¿Qué hora es?</div>
+    <div id="Resultado">La conversión es:</div>
 
     <script>
         let url="https://api.frankfurter.dev/v2/rates"
@@ -20,8 +20,8 @@
 
 
     /* VA A PEDIR LA HORA*/
-    function leerHora(){
-        let hora="ahhh"
+    function leerMoneda(){
+        let moneda="ahhh"
         fetch (url)
         .then (response => {  
             console.log(response)
@@ -30,8 +30,8 @@
 
         .then (data => {
             console.log(data.time)
-            hora=data.time
-            resultado.innerHTML=hora
+            moneda=data.time
+            resultado.innerHTML=moneda
 
         })
         .catch()
@@ -39,7 +39,7 @@
     }
 
         boton.addEventListener("click", (e) => {
-           leerHora()
+           leerMoneda()
            console.log("Me han pulsado")
            /* resultado.innerHTML="Me han pulsado"+e.target.value*/
         

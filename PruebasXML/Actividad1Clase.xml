@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!--UD 8.1 EJERCICIOS-->
+
+<!--EJERCICIO 1: -->
+<nombre>
+<nombre_pila>Juan Martín</nombre_pila>
+<apellidos>Fernández Moreno de la Vega</apellidos>
+</nombre>
+
+
+<!--EJERCICIO 2: CREA UN DOCUMENTO XML EL SIGUIENTE TEXTO. EL MARCADO TIENE QUE  -->
+
+<usuarios>  
+    <alumno nombre="Juan Delgado Martínez" >
+       Pedido para el señor 
+    <nombre> Juan Delgado Martínez </nombre>
+
+
+    <pedido nombrePedido= " bicicleta A2023" >
+       El pedido se compone de una
+    <nombrePedido> bicicleta A2023 </nombrePedido>
+
+    <direccion calle="calle Barco 4", piso= "tercer piso", letra="A", dia="19-5-2000">
+      A entregar en la 
+
+    <calle> calle Barco 4 </calle>
+
+    <piso> tecer piso </piso>
+
+    <letra> A </letra>
+
+    <dia> 19-5-2000 </dia> 
+
+</usuarios>
+
+
+    
+    
+
+</usuarios>
